@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MediaStore</string>
+    <string name="todo">TODO</string>
+    <string name="load_next_frame">Load next frame</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="animate">Animate</string>
+    <string-array name="fuckstuff">
+        <item>isntthisgreat</item>
+        <item>thisnotsomuch</item>
+        <item>thisisok</item>
+    </string-array>
+</resources>
