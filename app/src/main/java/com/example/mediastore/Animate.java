@@ -53,7 +53,7 @@ public class Animate extends Activity {
 
     public void animate_frames(View view) throws InterruptedException {
 
-
+        // stufff
         Handler Handle = new Handler(Looper.getMainLooper());
         Handle.post(new Runnable() {
             int i = 0;
