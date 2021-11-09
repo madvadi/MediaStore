@@ -3,17 +3,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fitsSystemWindows="true">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:weightSum="2">
 
     <ImageSwitcher
         android:id="@+id/image"
         android:layout_width="fill_parent"
         android:layout_height="600dp"
         android:layout_alignParentTop="true" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:onClick="animate_frames"
+            android:text="@string/animate" />
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/back"
+            />
+    </LinearLayout>
+    <!--
+            app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5"
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="362dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/image"
         android:layout_alignParentStart="true"
@@ -30,7 +63,7 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="297dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/image"
         android:layout_alignParentEnd="true"
@@ -38,6 +71,7 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:gravity="bottom|start"
-        android:text="@string/back" />
+        android:text="@string/back"
+        /> -->
 
 </RelativeLayout>

@@ -11,24 +11,31 @@
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
-        android:layout_height="550dp"
+        android:layout_height="500dp"
         android:layout_alignParentTop="true" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        android:layout_below="@id/list"
-        android:layout_alignParentLeft="true" />
+        android:layout_width="0dp"
+        android:layout_weight="0.50"
+        android:layout_height="fill_parent"
+        android:text="@string/next" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/load_next_frame"
-        android:layout_below="@id/list"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
+        android:layout_width="0dp"
+        android:layout_weight="0.50"
+        android:layout_height="fill_parent"
+        android:text="@string/load_next_frame" />
+    </LinearLayout>
     <!--
         <Button
             android:id="@+id/button2"
